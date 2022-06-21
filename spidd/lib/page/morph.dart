@@ -57,77 +57,64 @@ class _MorphState extends State<Morph> {
     String? morphText = pref.getString('morph');
     if (morphText != null) {
       morphController.text = morphText.toString();}
-    else return;
-    setState(() => this.morphText = morphText);
+
 
     String? typeText = pref.getString('type');
     if (typeText != null) {
       typeController.text = typeText.toString();}
-    else return;
-    setState(() => this.typeText = typeText);
+
 
     String? sizeText = pref.getString('size');
     if (sizeText != null) {
       sizeController.text = sizeText.toString();}
-    else return;
-    setState(() => this.sizeText = sizeText);
 
     //pysical
     String? pc1Text = pref.getString('pc1');
     if (pc1Text != null) {
       pc1Controller.text = pc1Text.toString();}
-    else return;
-    setState(() => this.pc1Text = pc1Text);
+
 
      String? pc2Text = pref.getString('pc2');
     if (pc2Text != null) {
       pc2Controller.text = pc2Text.toString();}
-    else return;
-    setState(() => this.pc2Text = pc2Text);
+
 
     String? pc3Text = pref.getString('pc3');
     if (pc3Text != null) {
       pc3Controller.text = pc3Text.toString();}
-    else return;
-    setState(() => this.pc3Text = pc3Text);
+
 
     String? pc4Text = pref.getString('pc4');
     if (pc4Text != null) {
       pc4Controller.text = pc4Text.toString();}
-    else return;
-    setState(() => this.pc4Text = pc4Text);
+
 
     //mental
     String? mc1Text = pref.getString('mc1');
     if (mc1Text != null) {
       mc1Controller.text = mc1Text.toString();}
-    else return;
-    setState(() => this.mc1Text = mc1Text);
+
 
     String? mc2Text = pref.getString('mc2');
     if (mc2Text != null) {
       mc2Controller.text = mc2Text.toString();}
-    else return;
-    setState(() => this.mc2Text = mc2Text);
+
 
     String? mc3Text = pref.getString('mc3');
     if (mc3Text != null) {
       mc3Controller.text = mc3Text.toString();}
-    else return;
-    setState(() => this.mc3Text = mc3Text);
+
 
     String? mc4Text = pref.getString('mc4');
     if (mc4Text != null) {
       mc4Controller.text = mc4Text.toString();}
-    else return;
-    setState(() => this.mc4Text = mc4Text);
+
 
     //ware
     String? wareText = pref.getString('ware');
     if (wareText != null) {
       wareController.text = wareText.toString();}
-    else return;
-    setState(() => this.wareText = wareText);
+
 
   }
 

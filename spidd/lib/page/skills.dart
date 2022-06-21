@@ -63,66 +63,6 @@ class _SkillsState extends State<Skills> {
             ))));
   }
 
-//////////////////////////
-
-  Widget skillListEmpty() {
-    double boxhight = 27.25;
-    double circleSize = 27.25;
-    double fontSize = 12;
-    double circleFontSize = 12.3;
-    return (Stack(
-      children: [
-        SizedBox(
-            height: boxhight,
-            width: 120,
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                color: Color.fromARGB(255, 0, 0, 0),
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Align(
-                  alignment: Alignment.center,
-                  child: TextField(
-                      decoration: InputDecoration(
-                        border: InputBorder.none,
-                        isDense: true,
-                        contentPadding: EdgeInsets.all(5.0),
-                      ),
-                      textAlign: TextAlign.right,
-                      style: TextStyle(
-                          fontSize: fontSize,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold))),
-            )),
-        SizedBox(
-          height: boxhight,
-          width: 30,
-          child: DecoratedBox(
-            decoration: BoxDecoration(
-              color: Color.fromARGB(255, 212, 212, 212),
-              shape: BoxShape.circle,
-              border: Border.all(
-                  color: Color.fromARGB(255, 0, 0, 0),
-                  width: 2,
-                  style: BorderStyle.solid),
-            ),
-            child: Align(
-                alignment: Alignment.center,
-                child: TextField(
-                    textAlign: TextAlign.center,
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      isDense: true,
-                    ),
-                    style: TextStyle(
-                        color: Color.fromARGB(255, 20, 20, 20),
-                        fontSize: circleFontSize,
-                        fontWeight: FontWeight.bold))),
-          ),
-        ),
-      ],
-    ));
-  }
 
   Widget skillTreeSide() {
     double hight = 2;

@@ -35,14 +35,12 @@ class _SkillBoxEmptyState extends State<SkillBoxEmpty> {
     String? bText = pref.getString(widget.keyc);
     if (bText != null) {
       bController.text = bText.toString();
-    } else
-      return;
+    }
 
     String? skillText = pref.getString(widget.skillNamec);
     if (skillText != null) {
       skillController.text = skillText.toString();
-    } else
-      return;
+    }
   }
 
   @override
