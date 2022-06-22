@@ -52,7 +52,7 @@ class _InfoState extends State<Info> {
     else return;
     setState(() => this.atText = atText);
 
-    String? a1Text = pref.getString('a1');
+    String? a1Text = pref.getString('a11');
     if (a1Text != null) {
       a1Controller.text = a1Text.toString();}
     else return;
@@ -132,7 +132,7 @@ class _InfoState extends State<Info> {
               TextField(
                 controller: a1Controller,
                 onChanged: (text) async {
-                  pref.setString('a1', text);
+                  pref.setString('a11', text);
                 },
                 style: TextStyle(color: Colors.white),
                 decoration: InputDecoration(
