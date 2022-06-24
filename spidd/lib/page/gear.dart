@@ -25,8 +25,7 @@ class _GearState extends State<Gear> {
     String? gearText = pref.getString('gear');
     if (gearText != null) {
       gearController.text = gearText.toString();}
-    else return;
-    setState(() => this.gearText = gearText);
+
   }
 
 

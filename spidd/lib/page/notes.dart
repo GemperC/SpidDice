@@ -24,7 +24,6 @@ class _NotesState extends State<Notes> {
     String? noteText = pref.getString('notes');
     if (noteText != null) {
       noteController.text = noteText.toString();}
-    else return;
   }
 
   @override

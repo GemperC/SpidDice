@@ -8,8 +8,6 @@ import 'page/notes.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:math';
 
-
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -37,9 +35,6 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final _textController = TextEditingController();
   bool isChecked = false;
-
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -148,6 +143,10 @@ class _HomePageState extends State<HomePage> {
   }
 
   Iterable<int> rollDice(numOfDice) sync* {
+    if (numOfDice == '') {
+      numOfDice = '1';
+    }
+
     for (var i = 0; i < int.parse(numOfDice); i++) {
       var intValue = Random().nextInt(12) + 1;
       yield intValue;

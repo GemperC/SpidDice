@@ -37,44 +37,43 @@ class _InfoState extends State<Info> {
     String? nameText = pref.getString('name');
     if (nameText != null) {
       nameController.text = nameText.toString();}
-    else return;
-    setState(() => this.nameText = nameText);
+
 
     String? ahcText = pref.getString('ahc');
     if (ahcText != null) {
       ahcController.text = ahcText.toString();}
-    else return;
-    setState(() => this.ahcText = ahcText);
+
+
 
      String? atText = pref.getString('at');
     if (atText != null) {
       atController.text = atText.toString();}
-    else return;
-    setState(() => this.atText = atText);
+
+
 
     String? a1Text = pref.getString('a11');
     if (a1Text != null) {
       a1Controller.text = a1Text.toString();}
-    else return;
-    setState(() => this.a1Text = a1Text);
+
+
 
     String? a2Text = pref.getString('a2');
     if (a2Text != null) {
       a2Controller.text = a2Text.toString();}
-    else return;
-    setState(() => this.a2Text = a2Text);
+
+
 
     String? a3Text = pref.getString('a3');
     if (a3Text != null) {
       a3Controller.text = a3Text.toString();}
-    else return;
-    setState(() => this.a3Text = a3Text);
+
+
 
     String? bgText = pref.getString('bg');
     if (bgText != null) {
       bgController.text = bgText.toString();}
-    else return;
-    setState(() => this.bgText = bgText);
+
+
 
 
   }
